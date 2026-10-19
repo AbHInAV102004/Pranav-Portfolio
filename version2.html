@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Shiju — Video Editor & Graphic Designer Portfolio</title>
+    <meta name="description" content="Portfolio of Pranav Shiju, professional Video Editor & Graphic Designer specializing in Adobe Premiere Pro, DaVinci Resolve, After Effects, and AI-assisted content creation workflows.">
+    <meta name="keywords" content="Pranav Shiju, Video Editor, Graphic Designer, Motion Graphics, DaVinci Resolve, Premiere Pro, After Effects, Thrissur, Cutfruit Studios">
+    <meta name="author" content="Pranav Shiju">
+    
+    <!-- Open Graph / SEO Meta Tags -->
+    <meta property="og:title" content="Pranav Shiju — Video Editor & Graphic Designer">
+    <meta property="og:description" content="Creative and detail-oriented Video Editor & Graphic Designer with expertise in storytelling, motion graphics, and modern content workflows.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0B1020',
+                        navy: '#171F35',
+                        surface: '#1F2943',
+                        surfaceHover: '#2A3656',
+                        ice: '#E8EEFF',
+                        electricViolet: '#6965FF',
+                        electricGlow: '#8582FF',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0B1020;
+            color: #E8EEFF;
+            font-family: 'Outfit', 'Inter', sans-serif;
+        }
+        /* Glassmorphism utility with Electric Violet & Navy tones */
+        .glass-nav {
+            background: rgba(23, 31, 53, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(105, 101, 255, 0.15);
+        }
+        .glass-card {
+            background: rgba(23, 31, 53, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(105, 101, 255, 0.18);
+        }
+        .glass-card:hover {
+            border-color: rgba(105, 101, 255, 0.5);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1020;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #171F35;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6965FF;
+        }
+        .cinematic-glow {
+            box-shadow: 0 0 40px -5px rgba(105, 101, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-midnight text-ice antialiased selection:bg-electricViolet selection:text-ice">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo / Name -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-electricViolet to-indigo-700 flex items-center justify-center text-ice font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                    P
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-wider text-ice block group-hover:text-electricViolet transition-colors">PRANAV SHIJU</span>
+                    <span class="text-xs text-electricViolet/80 tracking-widest uppercase block">Video Editor & Designer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-electricViolet focus:outline-none focus:ring-2 focus:ring-electricViolet rounded transition-colors">About</a>
+    <a href="#works" class="text-sm font-medium text-slate-300 hover:text-electricViolet focus:outline-none focus:ring-2 focus:ring-electricViolet rounded transition-colors">Works</a>
+    <a href="#resume" class="text-sm font-medium text-slate-300 hover:text-electricViolet focus:outline-none focus:ring-2 focus:ring-electricViolet rounded transition-colors">Resume</a>
+    <a href="#contact" class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-blue-600 text-white hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all shadow-md hover:shadow-blue-500/25">Contact Me</a>
+</nav>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" aria-label="Toggle Menu" class="md:hidden text-slate-300 hover:text-electricViolet focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu (Slide-in) -->
+        <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-xs bg-navy border-l border-electricViolet/20 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-50 flex flex-col">
+            <div class="flex items-center justify-between p-6 border-b border-white/10">
+                <span class="font-bold text-lg text-ice">Menu</span>
+                <button id="close-menu-btn" aria-label="Close Menu" class="text-slate-400 hover:text-ice p-2">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+            <div class="flex flex-col p-6 gap-6 text-lg">
+                <a href="#about" class="mobile-link text-slate-300 hover:text-electricViolet transition-colors">About</a>
+                <a href="#works" class="mobile-link text-slate-300 hover:text-electricViolet transition-colors">Works</a>
+                <a href="#resume" class="mobile-link text-slate-300 hover:text-electricViolet transition-colors">Resume</a>
+                <a href="#contact" class="mobile-link text-slate-300 hover:text-electricViolet transition-colors">Contact</a>
+                <div class="pt-6 border-t border-white/10">
+                    <a href="#contact" class="mobile-link block text-center py-3 rounded-xl bg-electricViolet text-ice font-bold">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
+        <!-- Cinematic Background Lighting Effects -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electricViolet/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Info Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electricViolet/10 border border-electricViolet/30 text-electricViolet text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-electricViolet animate-pulse"></span>
+                    Available for Projects & Collaborations
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-ice leading-[1.1]">
+                    Shaping Frames <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricViolet via-indigo-400 to-electricGlow">Cutting Time</span> <br>
+                    Telling Stories.
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Creative and detail-oriented Video Editor & Graphic Designer based in Thrissur. Specializing in high-impact promotional videos, motion graphics, and modern AI-assisted production workflows.
+                </p>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#works" class="px-8 py-4 rounded-xl bg-electricViolet text-ice font-bold hover:bg-indigo-600 transition-all shadow-lg shadow-electricViolet/25 flex items-center gap-3 group">
+                        Explore Works
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-xl border border-electricViolet/30 text-ice font-semibold hover:bg-electricViolet/10 transition-all">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-ice">3+</span>
+                        <span class="text-xs text-slate-400">Years Experience</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-ice">1000+</span>
+                        <span class="text-xs text-slate-400">Projects Delivered</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-bold text-ice">100%</span>
+                        <span class="text-xs text-slate-400">Client Dedication</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Portrait / Visual Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-72 sm:w-80 lg:w-96 aspect-[4/5] rounded-2xl overflow-hidden glass-card cinematic-glow p-2 group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent opacity-60 z-10"></div>
+                    <!-- Replace 'YOUR_PORTRAIT_IMAGE.jpg' with your actual portrait photo file/URL -->
+                    <div class="w-full h-full rounded-xl bg-gradient-to-br from-navy to-surface flex flex-col items-center justify-center relative overflow-hidden">
+                        <img src="Pranav photos/me-oct-30-2024-05-bw.jpg.jpeg" alt="Pranav Shiju Portrait" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <!-- Fallback Placeholder View if image file isn't added yet -->
+                        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center" style="display: none;">
+                            <i class="fa-solid fa-clapperboard text-7xl text-electricViolet/40 mb-4 group-hover:scale-110 transition-transform duration-500"></i>
+                            <span class="text-slate-300 text-sm font-medium tracking-widest uppercase">Pranav Shiju</span>
+                            <span class="text-xs text-electricViolet mt-1">Cinematic Reel 2026</span>
+                        </div>
+                    </div>
+                    <!-- Decorative Badge -->
+                    <div class="absolute bottom-6 left-6 right-6 z-20 bg-navy/90 backdrop-blur-md p-4 rounded-xl border border-electricViolet/30 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-electricViolet/20 flex items-center justify-center text-electricViolet">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">Current Role</span>
+                            <span class="text-sm font-semibold text-ice block">Video Editor @ Cutfruit Studios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-navy relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-electricViolet font-semibold text-xs tracking-widest uppercase">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ice tracking-tight">Crafting Visuals with Precision & Passion</h2>
+                <p class="text-slate-300 text-base">Combining traditional post-production artistry with cutting-edge AI workflows to deliver compelling brand stories.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet text-2xl mb-6 group-hover:bg-electricViolet group-hover:text-ice transition-colors">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ice mb-3">Video Editing & Grading</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Expert proficiency in DaVinci Resolve and Adobe Premiere Pro. Crafting seamless cuts, pacing, and professional color grades for high-end ads and promos.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet text-2xl mb-6 group-hover:bg-electricViolet group-hover:text-ice transition-colors">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ice mb-3">Motion Graphics & AI</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Bringing projects to life with After Effects motion graphics, visual effects, and pioneering AI-assisted production workflows (Text-to-Video, Image-to-Video).
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet text-2xl mb-6 group-hover:bg-electricViolet group-hover:text-ice transition-colors">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-ice mb-3">Design & Branding</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Comprehensive graphic design in Photoshop, creating striking visual branding materials, banners, and social media content assets that convert.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="py-24 bg-midnight relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-electricViolet font-semibold text-xs tracking-widest uppercase">Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-ice tracking-tight mt-2">Featured Works & Showcase</h2>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2" id="filter-tabs">
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase bg-electricViolet text-ice transition-all" data-filter="all">All Works</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase bg-navy text-slate-300 hover:bg-surfaceHover transition-all" data-filter="commercials">Commercials</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase bg-navy text-slate-300 hover:bg-surfaceHover transition-all" data-filter="social">Social Reels</button>
+                    <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase bg-navy text-slate-300 hover:bg-surfaceHover transition-all" data-filter="design">Branding & Stills</button>
+                </div>
+            </div>
+
+      <!-- Section: 4-Video Uniform Grid Showcase with Hover Audio Control -->
+<div class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-ice">Freelance Video Projects</h2>
+        <p class="text-slate-400 text-sm mt-1">Client collaborations and independent editorial works.</p>
+    </div>
+    
+    <!-- Uniform Grid for All 4 Videos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Video Card 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/Angel post this is how winter feel like.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Winter Mood Edit</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    High-energy promotional video edited using Premiere Pro and DaVinci Resolve.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/angel-reel.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Tonico Edit</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Short description of client goal, styling, and deliverables.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/diya john fight quality.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Diya John Fight </h4>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Short description of client goal, styling, and deliverables.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video Card 4 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/Ekm video modified 02.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Ernakulam city</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Short description of client goal, styling, and deliverables.
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JavaScript for 2-Second Grace Period & Hover Audio Control -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const videos = document.querySelectorAll('.portfolio-video');
+        
+        videos.forEach(video => {
+            video.muted = true;
+            let resetTimer = null;
+
+            // When hovering back onto the video
+            video.addEventListener('mouseenter', () => {
+                // If the user came back within 2 seconds, cancel the reset timer
+                if (resetTimer) {
+                    clearTimeout(resetTimer);
+                    resetTimer = null;
+                }
+
+                // Pause and mute all other videos
+                videos.forEach(otherVideo => {
+                    otherVideo.muted = true;
+                    if (otherVideo !== video) {
+                        otherVideo.pause();
+                    }
+                });
+
+                // Unmute and play current video from where it left off
+                video.muted = false;
+                video.play().catch(error => {
+                    console.log("Autoplay blocked:", error);
+                });
+            });
+
+            // When cursor leaves the video
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.muted = true;
+
+                // Start a 2-second timer before resetting to the beginning
+                resetTimer = setTimeout(() => {
+                    video.currentTime = 0;
+                    resetTimer = null;
+                }, 2000); // 2000 milliseconds = 2 seconds
+            });
+        });
+    });
+</script>
+<!-- Section 2: Cutfruit Studios Works Showcase (27 Videos Grid) -->
+<div class="mb-16">
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-ice">Cutfruit Studios Works</h2>
+        <p class="text-slate-400 text-sm mt-1">High-end cinematic & ai generated productions and agency highlights.</p>
+    </div>
+
+    <!-- 4-Column Uniform Grid Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+       <!-- Video 1 -->
+<div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+    <div>
+        <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+            <video src="Video editing/creative videos/CHIRAYATH FEB V1 a.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+        </div>
+        <h4 class="text-lg font-bold text-ice mb-1">Studio Production 01</h4>
+        <p class="text-slate-300 text-xs leading-relaxed">High-energy motion graphics and promotional cut.</p>
+    </div>
+    <div class="flex flex-wrap gap-1.5 pt-3">
+        <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+    </div>
+</div>
+        <!-- Video 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/CHRIST CLG FEB V2 A.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 02</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Dynamic commercial campaign edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/CHRIST CLG JAN V1 CUT.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 03</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Advanced visual effects and asset generation.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/D&P MAR V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 04</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Brand storytelling sequence.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/L&V SEP V1 A.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 05</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Cinematic teaser edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/MA APR V1 RE.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 06</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Social media campaign highlight.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 7 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/NK APR V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 07</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Creative promotional clip.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 8 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/MA MAY V1 RE.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 08</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Product showcase reel.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 9 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/NK MAR V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 09</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">High-impact visual cut.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 10 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/NK SEP V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 10</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Commercial advertisement edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 11 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/PAPILLON JUNE V2 LED RE.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 11</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Cinematic sequence edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 12 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/PAPILLON MAY V4.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 12</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Motion graphics highlight.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 13 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src= "Video editing/creative videos/RL NOV V1 a.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 13</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Dynamic commercial cut.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 14 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/THOPPIL MAY V2.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 14</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Brand engagement reel.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 15 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/CHIRAYATH SEP V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 15</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Promotional teaser clip.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 16 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/DL FEB V2.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 16</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Social growth sequence.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 17 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/MA MAR V2.mp4"portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 17</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Creative studio highlight.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 18 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/MA MAY V2 RE A.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 18</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">High-energy visual cut.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 19 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/MAPLE JULY V1.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 19</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Commercial promotional clip.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 20 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/MC APR V2.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 20</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Cinematic campaign edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 21 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/PAPILLON AUG V2.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 21</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Motion graphics showcase.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 22 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/PAPILLON AUG V3 A.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 22</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Dynamic storytelling cut.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 23 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/RL JULY V2.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 23</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Brand awareness clip.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 24 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/ST.XR JUNE V1 re.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 24</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Commercial highlights reel.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+        <!-- Video 25 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/ST.XR MAY V1 RE A.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 25</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Promotional social cut.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">After Effects</span>
+            </div>
+        </div>
+
+        <!-- Video 26 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/TEE MAR V2 RE.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 26</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Cinematic teaser edit.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">DaVinci Resolve</span>
+            </div>
+        </div>
+
+        <!-- Video 27 -->
+        <div class="glass-card rounded-2xl overflow-hidden p-4 border border-electricViolet/20 flex flex-col justify-between">
+            <div>
+                <div class="aspect-[9/16] w-full rounded-xl bg-navy relative overflow-hidden flex items-center justify-center mb-4 shadow-xl">
+                    <video src="Video editing/creative videos/AI Video Edits/VNK APR V1 RE.mp4" class="portfolio-video w-full h-full object-cover" muted loop playsinline preload="metadata" controls></video>
+                </div>
+                <h4 class="text-lg font-bold text-ice mb-1">Studio Production 27</h4>
+                <p class="text-slate-300 text-xs leading-relaxed">Final studio showcase piece.</p>
+            </div>
+            <div class="flex flex-wrap gap-1.5 pt-3">
+                <span class="px-2 py-0.5 rounded bg-navy text-[10px] text-electricViolet border border-electricViolet/30">Premiere Pro</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            <!-- Image Gallery Grid (with lazy loading enabled on all images) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+    <!-- Item 1 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/angel 8.webp" alt="Corporate Ad Production" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Corporate Ad Production</h4>
+            <p class="text-slate-300 text-xs mb-4">Color graded in DaVinci Resolve with cinematic contrast and rich color science.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="social">
+        <img src="Photographs/photos webp/angel-ootty-001.webp" alt="Viral Social Reels" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Viral Social Reels</h4>
+            <p class="text-slate-300 text-xs mb-4">Fast-paced dynamic cutting, motion typography, and AI-enhanced asset workflows.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="design">
+        <img src="Photographs/photos webp/angel-tonico-01.webp" alt="Brand Identity & Banners" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Brand Identity & Banners</h4>
+            <p class="text-slate-300 text-xs mb-4">Designed in Photoshop for maximum digital impact and clean aesthetic harmony.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/gym view.webp" alt="Promotional Campaigns" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Promotional Campaigns</h4>
+            <p class="text-slate-300 text-xs mb-4">End-to-end video editing and narrative structuring for client marketing goals.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="social">
+        <img src="Photographs/photos webp/jeemol-naac-01.webp" alt="AI-Assisted Video Cuts" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">AI-Assisted Video Cuts</h4>
+            <p class="text-slate-300 text-xs mb-4">Leveraging text-to-video and image-to-video tools to accelerate content delivery.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="design">
+        <img src="Photographs/photos webp/marine-drive-01.webp" alt="Color Grading Stills" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Color Grading Stills</h4>
+            <p class="text-slate-300 text-xs mb-4">Comparative before/after lookups showcasing cinematic shadow recovery and warmth.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/megha-eyes.webp" alt="Product Launch Video" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Product Launch Video</h4>
+            <p class="text-slate-300 text-xs mb-4">Sleek hardware showcases captured with high-end drone footage and macro lenses.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="social">
+        <img src="Photographs/photos webp/moon-17-oct-2024.webp" alt="Social Media Campaign" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Social Media Campaign</h4>
+            <p class="text-slate-300 text-xs mb-4">High-engagement lifestyle clips formatted for multi-platform distribution.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 9 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="documentary">
+        <img src="Photographs/photos webp/nendhu-3st-march-01-re.webp" alt="Documentary Edit" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Documentary Edit</h4>
+            <p class="text-slate-300 text-xs mb-4">Immersive narrative pacing with clean audio mixing and archival restoration.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 10 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/nendhu-3st-march-02-re.webp" alt="Music Video" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Music Video</h4>
+            <p class="text-slate-300 text-xs mb-4">Rhythmic editing synced to audio tracks with neon lighting and artistic overlays.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 11 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="events">
+        <img src="Photographs/photos webp/nendhu-3st-march-06.webp" alt="Event Highlights" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Event Highlights</h4>
+            <p class="text-slate-300 text-xs mb-4">Live concert recaps capturing crowd energy, stage lights, and raw performance emotion.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 12 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="design">
+        <img src="Photographs/photos webp/nendhu-3st-march-04-story-re.webp" alt="Commercial Stills" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Commercial Stills</h4>
+            <p class="text-slate-300 text-xs mb-4">High-contrast editorial fashion photography and professional studio retouching.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 13 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="design">
+        <img src="Photographs/photos webp/nendhu-3st-march-06.webp" alt="Motion Graphics" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Motion Graphics</h4>
+            <p class="text-slate-300 text-xs mb-4">3D abstract visual elements and fluid asset integration for branding openers.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 14 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="social">
+        <img src="Photographs/photos webp/pheba-06.webp" alt="Influencer Vlog" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Influencer Vlog</h4>
+            <p class="text-slate-300 text-xs mb-4">Engaging creator content with custom sound effects, captions, and b-roll cuts.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 15 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/pheba-09.webp" alt="Explainer Video" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Explainer Video</h4>
+            <p class="text-slate-300 text-xs mb-4">Data visualization and crisp kinetic typography breaking down complex product features.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 16 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="events">
+        <img src="Photographs/photos webp/pheba-10.webp" alt="Wedding Reel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Wedding Reel</h4>
+            <p class="text-slate-300 text-xs mb-4">Cinematic storytelling capturing intimate couple moments with warm film emulation.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 17 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="commercials">
+        <img src="Photographs/photos webp/sheba-26th-oct-01.webp" alt="Real Estate Promo" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Real Estate Promo</h4>
+            <p class="text-slate-300 text-xs mb-4">Smooth gimbal walkthroughs and aerial drone shots highlighting luxury properties.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 18 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="documentary">
+        <img src="Photographs/photos webp/sheba-26th-oct-02.webp" alt="Educational Content" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Educational Content</h4>
+            <p class="text-slate-300 text-xs mb-4">Clear instructional framing, multi-camera switching, and lower-third graphics.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 19 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="social">
+        <img src="Photographs/photos webp/Shebaa-0001.webp" alt="Gaming Stream Highlights" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Gaming Stream Highlights</h4>
+            <p class="text-slate-300 text-xs mb-4">High-energy reactions, meme edits, and punchy sound design for fast-paced platforms.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+
+    <!-- Item 20 -->
+    <div class="gallery-item group relative rounded-2xl overflow-hidden glass-card aspect-[4/3] cursor-pointer" data-category="documentary">
+        <img src="Photographs/photos webp/Shebaa-0004.webp" alt="Travel Documentary" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-midnight/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-6 text-center">
+            <h4 class="text-ice font-bold text-lg mb-2">Travel Documentary</h4>
+            <p class="text-slate-300 text-xs mb-4">Breathtaking landscape captures and ambient soundscapes mapping cultural journeys.</p>
+            <span class="px-4 py-2 rounded-xl bg-electricViolet text-ice text-xs font-semibold">View Details</span>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-24 bg-navy relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-electricViolet font-semibold text-xs tracking-widest uppercase">Curriculum Vitae</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-ice tracking-tight mt-2">Professional Experience & Skills</h2>
+                </div>
+                <a href="#contact" class="px-6 py-3 rounded-xl border border-electricViolet/40 text-electricViolet font-semibold hover:bg-electricViolet hover:text-ice transition-all flex items-center gap-2 self-start md:self-auto">
+                    <i class="fa-solid fa-download"></i> Download CV / Resume
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Left Column: Experience Timeline -->
+                <div class="lg:col-span-7 space-y-8">
+                    <h3 class="text-xl font-bold text-ice flex items-center gap-3">
+                        <i class="fa-solid fa-briefcase text-electricViolet"></i> Work Experience
+                    </h3>
+
+                    <div class="space-y-6 border-l-2 border-electricViolet/30 pl-6 ml-3">
+                        <!-- Job 1 -->
+                        <div class="relative group">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-electricViolet border-4 border-navy"></span>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <span class="text-xs text-electricViolet font-semibold uppercase tracking-wider block mb-1">April 2025 - Present</span>
+                                <h4 class="text-xl font-bold text-ice">Video Editor</h4>
+                                <span class="text-sm text-slate-300 block mb-4">Cutfruit Studios, Chalakudy</span>
+                                <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                                    <li>Editing promotional videos, advertisements, and social media content for various clients.</li>
+                                    <li>Collaborating with the creative team to ensure smooth visual storytelling and brand alignment.</li>
+                                    <li>Applied AI-assisted workflows to support efficient content creation.</li>
+                                    <li>Applying motion graphics and visual effects using DaVinci Resolve, Adobe Premiere Pro, and After Effects.</li>
+                                    <li>Working in an organized office environment, maintaining professional communication and project coordination.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="relative group">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-electricViolet/60 border-4 border-navy"></span>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <span class="text-xs text-electricViolet font-semibold uppercase tracking-wider block mb-1">2023 - 2024</span>
+                                <h4 class="text-xl font-bold text-ice">Apprentice</h4>
+                                <span class="text-sm text-slate-300 block mb-4">Naipunnya Institute of Management and Information Technology, Pongam</span>
+                                <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                                    <li>Assisted in multimedia production, including video editing and design projects.</li>
+                                    <li>Worked with faculty and students to create educational and promotional content.</li>
+                                    <li>Contributed to website updates and basic graphic design tasks for digital platforms.</li>
+                                    <li>Developed technical and creative problem-solving skills in a professional work environment.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Job 3 -->
+                        <div class="relative group">
+                            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-electricViolet/60 border-4 border-navy"></span>
+                            <div class="glass-card p-6 rounded-2xl">
+                                <span class="text-xs text-electricViolet font-semibold uppercase tracking-wider block mb-1">2021 - Present</span>
+                                <h4 class="text-xl font-bold text-ice">Freelance Video Editor & Graphic Designer</h4>
+                                <span class="text-sm text-slate-300 block mb-4">Remote / Client Projects</span>
+                                <ul class="space-y-2 text-sm text-slate-300 list-disc list-inside">
+                                    <li>Edited promotional videos, corporate ads, and social media content for clients.</li>
+                                    <li>Designed branding materials, including logos, banners, and marketing assets.</li>
+                                    <li>Delivered high-quality projects within tight deadlines, ensuring client satisfaction.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Tech Stack & Education -->
+                <div class="lg:col-span-5 space-y-8">
+                    <!-- Software & Technical Stack -->
+                    <div class="glass-card p-6 rounded-2xl space-y-6">
+                        <h3 class="text-xl font-bold text-ice flex items-center gap-3">
+                            <i class="fa-solid fa-laptop-code text-electricViolet"></i> Software & Skills
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-slate-300 font-medium">DaVinci Resolve & Premiere Pro</span>
+                                    <span class="text-electricViolet">100%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-midnight overflow-hidden">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-electricViolet h-full rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-slate-300 font-medium">After Effects (Motion Graphics & VFX)</span>
+                                    <span class="text-electricViolet">100%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-midnight overflow-hidden">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-electricViolet h-full rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-slate-300 font-medium">Adobe Photoshop & Branding</span>
+                                    <span class="text-electricViolet">95%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-midnight overflow-hidden">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-electricViolet h-full rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-slate-300 font-medium">AI-Assisted Video Creation</span>
+                                    <span class="text-electricViolet">100%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-midnight overflow-hidden">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-electricViolet h-full rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-slate-300 font-medium">Python & Web Dev (HTML, CSS, JS)</span>
+                                    <span class="text-electricViolet">80%</span>
+                                </div>
+                                <div class="w-full h-2 rounded-full bg-midnight overflow-hidden">
+                                    <div class="bg-gradient-to-r from-indigo-600 to-electricViolet h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-3 py-1 rounded-md bg-midnight text-xs text-slate-300 border border-white/5">Video Editing</span>
+                            <span class="px-3 py-1 rounded-md bg-midnight text-xs text-slate-300 border border-white/5">Color Grading</span>
+                            <span class="px-3 py-1 rounded-md bg-midnight text-xs text-slate-300 border border-white/5">Time Management</span>
+                            <span class="px-3 py-1 rounded-md bg-midnight text-xs text-slate-300 border border-white/5">Team Collaboration</span>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="glass-card p-6 rounded-2xl space-y-4">
+                        <h3 class="text-xl font-bold text-ice flex items-center gap-3">
+                            <i class="fa-solid fa-graduation-cap text-electricViolet"></i> Education
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs text-electricViolet font-semibold">2022 - 2025</span>
+                                <h4 class="text-base font-bold text-ice">Bachelor of Computer Science</h4>
+                                <p class="text-xs text-slate-300">Naipunnya Institute of Management and Information Technology, Pongam, Thrissur (Calicut University)</p>
+                            </div>
+                            <div class="border-t border-white/10 pt-3">
+                                <span class="text-xs text-electricViolet font-semibold">2021 - 2022</span>
+                                <h4 class="text-base font-bold text-ice">Higher Secondary</h4>
+                                <p class="text-xs text-slate-300">Perpetual Succour Higher Secondary School, Thirumudikkunnu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-24 bg-midnight relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-electricViolet font-semibold text-xs tracking-widest uppercase">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-ice tracking-tight">Let's Create Something Cinematic Together</h2>
+                <p class="text-slate-300 text-base">Have a project in mind, need a professional video editor, or want to collaborate? Drop a message below.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Contact Info / Socials -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="glass-card p-8 rounded-2xl space-y-6">
+                        <h3 class="text-xl font-bold text-ice">Contact Information</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Feel free to reach out via phone, email, or connect across professional social media channels. Based in Thrissur, Kerala.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <a href="tel:7034514241" class="flex items-center gap-4 text-slate-300 hover:text-electricViolet transition-colors group">
+                                <div class="w-10 h-10 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet group-hover:bg-electricViolet group-hover:text-ice transition-colors">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <span class="text-sm font-medium">+91 7034514241</span>
+                            </a>
+
+                            <a href="mailto:pranavshiju18@gmail.com" class="flex items-center gap-4 text-slate-300 hover:text-electricViolet transition-colors group">
+                                <div class="w-10 h-10 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet group-hover:bg-electricViolet group-hover:text-ice transition-colors">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <span class="text-sm font-medium">pranavshiju18@gmail.com</span>
+                            </a>
+
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-10 h-10 rounded-xl bg-electricViolet/10 border border-electricViolet/30 flex items-center justify-center text-electricViolet">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <span class="text-sm font-medium">Thrissur, Kerala, India</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-white/10">
+                            <span class="text-xs text-slate-400 uppercase tracking-widest block mb-4">Professional Profiles</span>
+                            <div class="flex items-center gap-3">
+                                <a href="#" aria-label="YouTube" class="w-10 h-10 rounded-xl bg-midnight border border-white/5 flex items-center justify-center text-slate-300 hover:text-ice hover:bg-electricViolet transition-all">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" aria-label="Vimeo" class="w-10 h-10 rounded-xl bg-midnight border border-white/5 flex items-center justify-center text-slate-300 hover:text-ice hover:bg-electricViolet transition-all">
+                                    <i class="fa-brands fa-vimeo-v"></i>
+                                </a>
+                                <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-midnight border border-white/5 flex items-center justify-center text-slate-300 hover:text-ice hover:bg-electricViolet transition-all">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-midnight border border-white/5 flex items-center justify-center text-slate-300 hover:text-ice hover:bg-electricViolet transition-all">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form id="contact-form" class="glass-card p-8 rounded-2xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label for="name" class="text-xs font-semibold uppercase tracking-wider text-slate-300">Your Name</label>
+                                <input type="text" id="name" required class="w-full bg-midnight border border-white/10 rounded-xl px-4 py-3 text-ice placeholder-slate-500 focus:outline-none focus:border-electricViolet transition-colors" placeholder="John Doe">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="email" class="text-xs font-semibold uppercase tracking-wider text-slate-300">Your Email</label>
+                                <input type="email" id="email" required class="w-full bg-midnight border border-white/10 rounded-xl px-4 py-3 text-ice placeholder-slate-500 focus:outline-none focus:border-electricViolet transition-colors" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="subject" class="text-xs font-semibold uppercase tracking-wider text-slate-300">Subject</label>
+                            <input type="text" id="subject" required class="w-full bg-midnight border border-white/10 rounded-xl px-4 py-3 text-ice placeholder-slate-500 focus:outline-none focus:border-electricViolet transition-colors" placeholder="Project Collaboration / Inquiry">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="message" class="text-xs font-semibold uppercase tracking-wider text-slate-300">Message</label>
+                            <textarea id="message" rows="5" required class="w-full bg-midnight border border-white/10 rounded-xl px-4 py-3 text-ice placeholder-slate-500 focus:outline-none focus:border-electricViolet transition-colors" placeholder="Tell me about your project requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-electricViolet to-indigo-600 text-ice font-bold hover:from-indigo-600 hover:to-electricViolet transition-all shadow-lg shadow-electricViolet/25">
+                            Send Message
+                        </button>
+                        <div id="form-success" class="hidden text-center text-electricViolet text-sm font-semibold pt-2">
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-electricViolet/15 py-12 relative">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-electricViolet flex items-center justify-center text-ice font-bold text-sm">
+                    P
+                </div>
+                <span class="text-sm font-semibold text-ice">© 2026 Pranav Shiju. All rights reserved.</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm text-slate-400">
+                <a href="#about" class="hover:text-electricViolet transition-colors">About</a>
+                <a href="#works" class="hover:text-electricViolet transition-colors">Works</a>
+                <a href="#resume" class="hover:text-electricViolet transition-colors">Resume</a>
+                <a href="#contact" class="hover:text-electricViolet transition-colors">Contact</a>
+            </div>
+            <!-- Back to top button positioned cleanly on the right side of the footer flex layout -->
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top" class="w-10 h-10 rounded-xl bg-midnight border border-white/5 flex items-center justify-center text-slate-300 hover:text-ice hover:bg-electricViolet transition-all ml-auto sm:ml-0">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript for Interactive UI -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-x-full');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // Sticky Header Glass Effect on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                header.classList.add('shadow-xl', 'border-electricViolet/30');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+
+        // Works Section Gallery Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-electricViolet', 'text-ice');
+                    b.classList.add('bg-navy', 'text-slate-300');
+                });
+                btn.classList.remove('bg-navy', 'text-slate-300');
+                btn.classList.add('bg-electricViolet', 'text-ice');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Contact Form Submission Mock
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate form dispatch
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                submitBtn.textContent = 'Send Message';
+                submitBtn.disabled = false;
+                formSuccess.classList.remove('hidden');
+                contactForm.reset();
+                setTimeout(() => {
+                    formSuccess.classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
